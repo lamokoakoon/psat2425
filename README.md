@@ -10,3 +10,6 @@ Aplikasi ini adalah sistem login dan manajemen data sederhana berbasis PHP dan M
 * Antarmuka mode gelap (dark mode)
 * Deployment otomatis via UserData di AWS EC2
 * Koneksi ke database MySQL/RDS
+
+#
+# 🛠️ Cara Deploy ke AWS EC2 dengan UserData
