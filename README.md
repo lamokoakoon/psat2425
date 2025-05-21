@@ -3,10 +3,10 @@ Aplikasi ini adalah sistem login dan manajemen data sederhana berbasis PHP dan M
 
 #
 
-#🚀 Fitur Utama
+# 🚀 Fitur Utama
 
-Sistem Login dan Logout
-Operasi CRUD (Create, Read, Update, Delete) untuk manajemen data
-Antarmuka mode gelap (dark mode)
-Deployment otomatis via UserData di AWS EC2
-Koneksi ke database MySQL/RDS
+* Sistem Login dan Logout
+* Operasi CRUD (Create, Read, Update, Delete) untuk manajemen data
+* Antarmuka mode gelap (dark mode)
+* Deployment otomatis via UserData di AWS EC2
+* Koneksi ke database MySQL/RDS
