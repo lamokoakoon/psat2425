@@ -22,9 +22,9 @@ Sebelum men-deploy aplikasi, pastikan Anda telah membuat database RDS:
 3. Klik "Create database"
 4. Pilih "MySQL"
 5. Atur konfigurasi sesuai kebutuhan:
-   * DB instance identifier: `` (nama pilihan Anda)
+   * DB instance identifier: `(nama pilihan Anda)` 
    * Master username: `admin`
-   * Master password: `` (gunakan password yang lebih kuat untuk produksi)
+   * Master password: `(gunakan password yang lebih kuat untuk produksi)` 
 6. Atur pengaturan jaringan agar dapat diakses dari EC2 instance
 7. Catat endpoint RDS yang akan digunakan pada konfigurasi .env
 
@@ -39,7 +39,7 @@ Security Group diperlukan untuk mengatur akses ke instance EC2:
 5. Tambahkan aturan inbound:
    * HTTP (Port 80) - Source: 0.0.0.0/0
    * HTTPS (Port 443) - Source: 0.0.0.0/0
-   * SSH (Port 22) - Source: IP address Anda (untuk keamanan)
+   * SSH (Port 22) - Source: 0.0.0.0/0 
 6. Klik "Create security group"
 
 ### 3. Membuat EC2 Instance dengan UserData
@@ -67,3 +67,19 @@ sudo apt update -y
             echo DB_PASS=(password)  >> /var/www/html/.env
             echo DB_NAME=(nama database)  >> /var/www/html/.env
             echo DB_HOST=(endpoint rds) >> /var/www/html/.env
+```
+#
+### 5. Verifikasi Instalasi
+
+1. Setelah inisialisasi selesai (biasanya 3-5 menit), akses aplikasi melalui browser
+2. Buka Public IPv4 address atau Public IPv4 DNS dari instance EC2 Anda
+3. Contoh: `http://ec2-12-34-56-78.compute-1.amazonaws.com` atau `http://12.34.56.78`
+
+### 6. Menjalankan Aplikasi
+
+🔑 Login menggunakan kredensial default:
+* Username: admin
+* Password: 123
+
+📥 Setelah login, Anda dapat menggunakan fitur CRUD untuk mengelola data sesuai kebutuhan.
+
