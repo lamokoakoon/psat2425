@@ -1,7 +1,5 @@
-# Penilaian Sumatif Akhir Tahun
-## Mapil DevOps XI TJKT 1 - Penilaian Praktek
-### SMKN 1 Banyumas - TA. 2024 2025
-
+# Penilaian sumatif akhir tahun 2425 - Aplikasi CRUD PHP
+Aplikasi ini adalah sistem login dan manajemen data sederhana berbasis PHP dan MySQL yang dapat digunakan untuk belajar dasar-dasar pengembangan web dengan PHP.
 
 #
 # Cara mendeploy Aplikasi
