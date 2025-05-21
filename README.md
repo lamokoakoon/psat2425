@@ -69,13 +69,13 @@ sudo apt update -y
             echo DB_HOST=(endpoint rds) >> /var/www/html/.env
 ```
 #
-### 5. Verifikasi Instalasi
+### 4. Verifikasi Instalasi
 
 1. Setelah inisialisasi selesai (biasanya 3-5 menit), akses aplikasi melalui browser
 2. Buka Public IPv4 address atau Public IPv4 DNS dari instance EC2 Anda
-3. Contoh: `http://ec2-12-34-56-78.compute-1.amazonaws.com` atau `http://12.34.56.78`
+3. Contoh: `http://18.212.58.167/`
 
-### 6. Menjalankan Aplikasi
+### 5. Menjalankan Aplikasi
 
 🔑 Login menggunakan kredensial default:
 * Username: admin
